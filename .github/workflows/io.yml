@@ -8,7 +8,7 @@ jobs:
         id: set-var
         shell: python
         run: |
-          impot os
+          import os
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
             print(f"VAL=true", file=f)
       - name: print value
